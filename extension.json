@@ -1,0 +1,56 @@
+{
+    "identifier": "aloebach.cotton",
+    "name": "Cotton",
+    "organization": "Drewmerica Industries",
+    "description": "Support for Cotten framework for Playdate game development",
+    "version": "1.0",
+    "categories": ["commands"],
+    
+    "main": "main.js",
+    
+    "activationEvents": [
+        "onLanguage:html"
+    ],
+    
+    "entitlements": {
+        "clipboard": true, "filesystem": "readwrite", "process": true
+    },
+    
+    "commands": {
+        "extensions": [
+            {
+                "title": "Playdate: Level Editor",
+                "command": "cotton.openLevelEditor",
+                "shortcut": "cmd-l"
+            }, 
+            {
+                "title": "Playdate: Build",
+                "command": "cotton.compile",
+                "shortcut": "cmd-r"        
+            },    
+            {
+                "title": "Documentation: CottonScript",
+                "command": "cotton.DocumentationCottonScript",
+                "shortcut": "cmd-d"
+            },
+            {
+                "title": "Documentation: Cotton Wiki",
+                "command": "cotton.DocumentationWiki",
+                "shortcut": "cmd-d"
+            },            
+            {
+                "title": "Documentation: SDK",
+                "command": "cotton.DocumentationSDK"
+            }
+        ]
+    },
+    
+    "config": [
+        {
+            "key": "cotton.foobar",
+            "title": "Foo the bar",
+            "type": "boolean",
+            "default": false
+        }
+    ]
+}
