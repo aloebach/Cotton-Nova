@@ -1,3 +1,6 @@
+# Cotton-Nova
+Nova extension to support the Cotton framework  
+
 <!--
 👋 Hello! As Nova users browse the extensions library, a good README can help them understand what your extension does, how it works, and what setup or configuration it may require.
 
@@ -18,7 +21,7 @@ Let's get started!
 🎈 It can also be helpful to include a screenshot or GIF showing your extension in action:
 -->
 
-![](https://nova.app/images/en/dark/editor.png)
+![](https://github.com/aloebach/Cotton-Nova/blob/308b5118a93358e14fb7de3b2200a697f52d1695/Images/cotton-extension.gif)
 
 ## Requirements
 
