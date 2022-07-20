@@ -33,9 +33,6 @@ Cotton requires some additional tools to be installed on your Mac:
 - [Cotton](https://github.com/unbelievableflavour/Cotton), which is available on GitHub
 - [LDtk](https://ldtk.io/) Level Designer Toolkit
 
-I also recommend installing the Playdate extension for Nova for conveniently building and running your Playdate code.
-- [Playate Extension for Nova](https://extensions.panic.com/extensions/com.panic/com.panic.Playdate/)
-
 <!--
 ✨ Providing tips, tricks, or other guides for installing or configuring external dependencies can go a long way toward helping your users have a good setup experience:
 -->
@@ -46,7 +43,7 @@ I also recommend installing the Playdate extension for Nova for conveniently bui
 2. Download the 'zip' file with the [the latest version of Cotton](https://github.com/unbelievableflavour/Cotton/releases).
 3. Extract it in the project folder of your choosing and rename it to the name of your project
 4. Right click on the project folder and select "Open in Nova"
-5. Optionally install the Playdate extension and add `playdate Simulator` task to your project ( This will give access to to features like compile tasks, automatic Lua formatting, etc.)
+5. In Nova, go to the project settings and add the task "Playdate - Cotton" ( This will allow you to automatically run & build your playdate game with `cmd+r` )
 6. You are now ready to work on your project!
 
 
@@ -55,32 +52,11 @@ I also recommend installing the Playdate extension for Nova for conveniently bui
 <!--
 🎈 If users will interact with your extension manually, describe those options:
 -->
-
-To run Cotton:
-
-- Select the **Editor → Cotton** menu item; or
-- Open the command palette and type `Cotton`
+Go to `Extensions`->`Cotton`->`Documentation: Cotton Wiki` to read about how to get started editing the code to make the game your own.
+To run your game in Cotton:
+- simply press `cmd_r` or press the green arrow next to your project name to build & run the Playdate .pdx file in the simulator
 
 <!--
 🎈 Alternatively, if your extension runs automatically (as in the case of a validator), consider showing users what they can expect to see:
 -->
 
-Cotton runs any time you open a local project, automatically lints all open files, then reports errors and warnings in Nova's **Issues** sidebar and the editor gutter:
-
-![](https://nova.app/images/en/light/tools/sidebars.png)
-
-### Configuration
-
-<!--
-🎈 If your extension offers global- or workspace-scoped preferences, consider pointing users toward those settings. For example:
--->
-
-To configure global preferences, open **Extensions → Extension Library...** then select Cotton's **Preferences** tab.
-
-You can also configure preferences on a per-project basis in **Project → Project Settings...**
-
-<!--
-👋 That's it! Happy developing!
-
-P.S. If you'd like, you can remove these comments before submitting your extension 😉
--->

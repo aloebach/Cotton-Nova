@@ -4,7 +4,7 @@
     "organization": "Drewmerica Industries",
     "description": "Support for Cotten framework for Playdate game development",
     "version": "1.0",
-    "categories": ["commands"],
+    "categories": ["commands", "tasks"],
     
     "main": "main.js",
     
@@ -22,12 +22,7 @@
                 "title": "Playdate: Level Editor",
                 "command": "cotton.openLevelEditor",
                 "shortcut": "cmd-l"
-            }, 
-            {
-                "title": "Playdate: Build",
-                "command": "cotton.compile",
-                "shortcut": "cmd-r"        
-            },    
+            },  
             {
                 "title": "Documentation: CottonScript",
                 "command": "cotton.DocumentationCottonScript",
@@ -45,6 +40,35 @@
         ]
     },
     
+        
+    "taskTemplates": {
+        "Cotton": {
+            "name": "Playdate",
+            "description": "Builds and runs your Playdate game",
+            "tasks": {
+                "build": {
+                    "shell": true,
+                    "command": "pdc",
+                    "args": [
+                        "Source", "$(WorkspaceName).pdx"
+                    ],
+                    "env": {
+                    }
+                },
+                "run": {
+                    "shell": true,
+                    "buildBeforeRunning": true,
+                    "command": "/usr/bin/open",
+                    "args": [
+                        "$(WorkspaceName).pdx"
+                    ],
+                    "env": {
+                    } 
+                }
+            }
+        }
+    },
+    
     "config": [
         {
             "key": "cotton.foobar",
@@ -52,5 +76,7 @@
             "type": "boolean",
             "default": false
         }
-    ]
+    ],
+
+    
 }

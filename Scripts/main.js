@@ -74,12 +74,27 @@ nova.commands.register("cotton.openLevelEditor", (workspace) => {
 
 
 
+let task = new Task("Say Example");
+
+task.setAction(Task.Build, new TaskProcessAction('/usr/bin/say', {
+    args: ["I'm Building!"],
+    env: {}
+}));
+
+task.setAction(Task.Run, new TaskProcessAction('/usr/bin/say', {
+    args: ["I'm Running!"],
+    env: {}
+}));
+
+task.setAction(Task.Clean, new TaskProcessAction('/usr/bin/say', {
+    args: ["I'm Cleaning!"],
+    env: {}
+}));
 
 
 
 
-
-
+// TEST CODE - DELETE LATER!
 nova.commands.register("cotton.test", (workspace) => {
     
     var options = {
