@@ -11,10 +11,6 @@
     
     "main": "main.js",
     
-    "activationEvents": [
-        "onLanguage:html"
-    ],
-    
     "entitlements": {
         "clipboard": true, "filesystem": "readwrite", "process": true
     },
@@ -23,15 +19,15 @@
         "extensions": [
             {
                 "title": "Playdate: Level Editor",
-                "command": "cotton.openLevelEditor",
+                "command": "cotton.openLevelEditor"
             },  
             {
                 "title": "Documentation: CottonScript",
-                "command": "cotton.DocumentationCottonScript",
+                "command": "cotton.DocumentationCottonScript"
             },
             {
                 "title": "Documentation: Cotton Wiki",
-                "command": "cotton.DocumentationWiki",
+                "command": "cotton.DocumentationWiki"
             },            
             {
                 "title": "Documentation: SDK",
@@ -76,7 +72,6 @@
             "type": "boolean",
             "default": false
         }
-    ],
+    ]
 
-    
 }
