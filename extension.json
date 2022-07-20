@@ -4,6 +4,9 @@
     "organization": "Drewmerica Industries",
     "description": "Support for Cotten framework for Playdate game development",
     "version": "1.1",
+    "repository": "https://github.com/aloebach/Cotton-Nova",
+    "bugs": "https://github.com/aloebach/Cotton-Nova/issues",
+    
     "categories": ["commands", "tasks"],
     
     "main": "main.js",

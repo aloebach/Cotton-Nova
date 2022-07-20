@@ -32,7 +32,7 @@ Cotton requires some additional tools to be installed on your Mac:
 2. Download the 'zip' file with the [the latest version of Cotton](https://github.com/unbelievableflavour/Cotton/releases).
 3. Extract it in the project folder of your choosing and rename it to the name of your project
 4. Right click on the project folder and select "Open in Nova"
-5. Make sure the Cotton extension has been installed and activein Nova under `Extensions`->`Extension Libary`
+5. Make sure the Cotton extension has been installed and active in Nova under `Extensions`->`Extension Libary`
 6. In Nova, go to the project settings and add the task "Playdate - Cotton" ( This will allow you to automatically run & build your playdate game with `cmd+r` )
 ![](/Images/adding-task.gif)
 
